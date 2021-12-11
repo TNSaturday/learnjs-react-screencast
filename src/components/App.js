@@ -1,4 +1,4 @@
-import ArticleList from "./ArticleList";
+import ArticleList from './ArticleList';
 import articles from '../fixtures';
 import 'bootstrap/dist/css/bootstrap.css';
 
