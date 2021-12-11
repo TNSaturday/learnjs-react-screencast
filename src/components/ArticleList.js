@@ -1,9 +1,12 @@
 import Article from "./Article";
 
 export default function ArticleList({ articles }) {
+  const articlesList = articles.map(el => {
+    return <li className="list-group-item" key={el.id}><Article article={el}/></li>;
+  });
   return (
-    <ul>
-      {articles.map(el => <li key={el.id}><Article article={el}/></li>)}
+    <ul className="list-group">
+      {articlesList}
     </ul>  
   )
 }

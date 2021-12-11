@@ -16,11 +16,14 @@ class Article extends Component {
     }
 
     return (
-      <div>
-        <h2>{article.title}</h2>
-        <button onClick={handleClick}>
-          {this.state.isOpen ? 'close' : 'open'}
-        </button>
+      <div className="card">
+        <div className="card-header">
+          <h2>{article.title}</h2>
+          <button onClick={handleClick}>
+            {this.state.isOpen ? 'close' : 'open'}
+          </button>
+        </div>
+        
         {body}
         <h3>Creation date: {(new Date(article.date)).toDateString()}</h3>
       </div>
