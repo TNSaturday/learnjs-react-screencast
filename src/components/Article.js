@@ -2,7 +2,7 @@ import { Component } from "react";
 
 class Article extends Component {
   state = {
-    isOpen: true,
+    isOpen: this.props.defaultOpen,
   }
 
   render () {
@@ -30,6 +30,9 @@ class Article extends Component {
           </h2>
         </div>
         <div className="card-body">
+          <p className="text-muted">
+            {article.id}
+          </p>
           <h6 className="card-subtitle text-muted">
             Creation date: {(new Date(article.date)).toDateString()}
           </h6>
