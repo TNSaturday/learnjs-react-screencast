@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project was written following [learnjavascript.ru](https://learn.javascript.ru/screencast/react) screencast.
+
 ## Available Scripts
 
 In the project directory, you can run:
