@@ -17,7 +17,7 @@ class Article extends Component {
     }
 
     return (
-      <div className="card mx-auto" style={{width: '50%'}}>
+      <div className="card mx-auto" style={{width: '75%'}}>
         <div className="card-header">
           <h2>
             {article.title}
