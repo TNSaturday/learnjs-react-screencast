@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 
-class Article extends Component {
+class Article extends PureComponent {
   state = {
     isOpen: this.props.defaultOpen,
   }
