@@ -1,5 +1,6 @@
 import Article from "../Article";
 import './style.css';
+import React from "react";
 
 export default function ArticleList({ articles }) {
   const articlesList = articles.map((el, index) => 

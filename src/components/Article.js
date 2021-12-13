@@ -1,11 +1,19 @@
-import { Component } from "react";
+import React, { Component } from "react";
 
 class Article extends Component {
   state = {
     isOpen: this.props.defaultOpen,
   }
 
-  render () {
+  componentDidUpdate(prevProps) {
+    if (this.props.defaultOpen !== prevProps.defaultOpen) {
+      this.setState({
+        isOpen: this.props.defaultOpen
+      });
+    }
+  }
+
+  render() {
     const {article} = this.props;
     const body = this.state.isOpen && 
       <section className="card-text">{article.text}</section>;
