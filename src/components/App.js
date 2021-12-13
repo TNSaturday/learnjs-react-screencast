@@ -1,9 +1,9 @@
 import ArticleList from './ArticleList';
 import articles from '../fixtures';
 import 'bootstrap/dist/css/bootstrap.css';
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class App extends Component {
+class App extends PureComponent {
   state = {
     reverted: false,
   };
